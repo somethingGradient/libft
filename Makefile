@@ -14,14 +14,13 @@ NAME = libft.a
 
 FLAG = -Wall -Wextra -Werror
 
-all: $(NAME)
+all: my
 
 $(NAME):
 		gcc $(FLAG) -c *.c
 		ar rc $(NAME) *.o
 
 my:
-	@clear
 	@gcc ${FLAG} *.c
 	@./a.out
 
@@ -31,4 +30,4 @@ clean:
 fclean: clean
 		rm -f $(NAME)
 
-re: fclean all
+re: fclean $(NAME)

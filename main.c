@@ -1,28 +1,22 @@
 #include "libft.h"
 
-#include <stdio.h>
-#include <ctype.h>
-#include <string.h>
-
 int	main(void)
 {
-	char	str[] = "b1ohlellof";
-	char	dest[10];
+	char *s1 = "abc";
+	char *s2 = "a";
+	// char *s1 = "";
+	// char *s2 = "AAAAAA";
+	// printf("%d\n",s1[2] - s2[2]);
+	// printf("memcmp %d\n\n", memcmp(s1, s2, 8));
+	// printf("ft_memcmp %d\n", ft_memcmp(s1, s2, 8));
 
-	int a = 35;
-	printf("%c\n", (char)a);
 
-	
-	ft_memccpy(dest, str, 1, 9);
+	//printf("%c\n", toupper(122));
 
-	printf("here %s\n", dest);
+	printf("%lu\n", strlcat(s2, s1, 1));
+	printf("%s\n", s2);
 
-printf("\n");
-
-	memccpy(dest, str, 1, 9);
-
-	printf("here2 %s\n", dest);
-
+	// printf("\n%lu\n", ft_strlcat(s2, s1, 3));
 
 	return (0);
 }
